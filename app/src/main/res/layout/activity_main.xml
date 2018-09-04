@@ -7,17 +7,17 @@
     android:title="Planets">
 
     <GridView
-        android:id="@+id/planet_grid"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnWidth="80dp"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="25dp"
-        android:horizontalSpacing="10dp"
-        android:stretchMode="columnWidth"
-        android:gravity="center">
-    </GridView>
+android:id="@+id/planet_grid"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:columnWidth="80dp"
+android:numColumns="auto_fit"
+android:verticalSpacing="25dp"
+android:horizontalSpacing="10dp"
+android:stretchMode="columnWidth"
+android:gravity="center">
+</GridView>
 
 
 
-</LinearLayout>
+    </LinearLayout>

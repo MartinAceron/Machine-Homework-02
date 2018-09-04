@@ -18,15 +18,15 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlanetsAdapter extends ArrayAdapter<Planets>
-{
+public class Adapter  extends ArrayAdapter<Planets>{
     private Context context;
     private int itemLayoutResource;
     private ArrayList<Planets> planets = new ArrayList<>();
 
 
 
-    public PlanetsAdapter(@NonNull Context context, int resource, @NonNull List<Planets> planets) {
+
+    public Adapter(@NonNull Context context, int resource, @NonNull List<Planets> planets) {
         super(context, resource, planets);
 
         this.planets.addAll(planets);
@@ -57,8 +57,8 @@ public class PlanetsAdapter extends ArrayAdapter<Planets>
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View planetItemLayout = inflater.inflate(itemLayoutResource, parent, false);
 
-        ImageView planetImageView = planetItemLayout.findViewById(R.id.planet_imageView);
-        TextView planetTitle = planetItemLayout.findViewById(R.id.planet_title_textView);
+        ImageView planetImageView = planetItemLayout.findViewById(R.id.imageview);
+        TextView planetTitle = planetItemLayout.findViewById(R.id.textview);
 
         if(planets.getName() != null){
             planetTitle.setText(planets.getName());

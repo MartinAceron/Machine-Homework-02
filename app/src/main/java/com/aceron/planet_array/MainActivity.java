@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
         GridView planetsGrid = findViewById(R.id.planet_grid);
-        PlanetsAdapter adapter = new PlanetsAdapter(this, R.layout.activity_planets, planets);
+        Adapter adapter = new Adapter(this, R.layout.activity_planets, planets);
 
         planetsGrid.setAdapter(adapter);
         planetsGrid.setOnItemClickListener(this);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        TextView planetTitleTextview = view.findViewById(R.id.planet_title_textView);
+        TextView planetTitleTextview = view.findViewById(R.id.textview);
         Toast.makeText(this, planetTitleTextview.getText().toString(), Toast.LENGTH_SHORT).show();
 
     }
